@@ -1,0 +1,79 @@
+1.1.3 (2019/09/13):
+===================
+* Fix some warnings reported by Clang (Bug #15037)
+* Avoid unnecessary strdup (Bug #15196)
+* Replace GtkStock buttons
+* New translation for hy_AM
+* Lots of other translations updates
+
+1.1.2 (2019/01/13):
+===================
+* Listen for UPower events for power source changes (Bug #14978, thanks to Alexander Butenko)
+* Reset averages when a battery is removed/added (Bug #14930, thanks to John Lindgren)
+* Re-detect battery presence every 30 seconds (Bug #14930, thanks to John Lindgren)
+* Fix null pointer dereference with no battery present (Bug #14930, thanks to John Lindgren)
+* Remove deprecated /proc/acpi support in favor of sysfs. (Thanks to John Lindgren)
+* Remove APM support on FreeBSD as well, it doesn't even build. (Thanks to John Lindgren)
+* Remove historical APM support for Linux, support ACPI only. (Thanks to John Lindgren)
+* Initially show/hide widgets according to user config (Bug #9594, thanks to John Lindgren)
+
+1.1.1 (2018/09/22):
+===================
+* Avoid memory leaks
+* Bump to minimal Gtk to 3.16
+* Only set progressbar width or height depending on the orientation (Bug #12942)
+* Create a single GtkCssProvider in setup_battmon() (Bug #12975)
+* Improved spacing and layout in dialogs (Bug #14659)
+
+1.1.0 (2016/11/01):
+===================
+* Fix progressbar css styling with Gtk 3.20
+* Set min-width/height to 4px
+
+1.0.99 (2016/06/05):
+===================
+* port to gtk+3/libxfce4ui-2/libxfce4panel-2.0
+* Fix build on aarch64 (bug #11724)
+
+1.0.5 (2012/05/30):
+* Better compliance with the panel plugin HIG
+* Don't set labels orientation on 4.8 panels (bug #8961)
+* Set progressbar orientation in setup_battmon (bug #8935)
+
+1.0.4 (2012/05/14):
+===================
+* Fix compilation with panel version < 4.9
+
+1.0.3 (2012/05/13):
+===================
+* Improve plugin UI in vertical/deskbar/multirows panels
+
+1.0.2 (2012/04/30):
+===================
+* change icon depending on charge level/ac status (bug #7768)
+* install icons from xfpm
+* add AC color state and allow user-configurable colors (bug #6757)
+* implement read_acpi_state()/read_acpi_inof() on FreeBSD (bug #2814)
+* make the progressbar optional
+* improve battery removal detection
+* rework configuration dialog to use tabs
+* only display time if it's valid
+
+1.0.1 (2012/04/17):
+===================
+* build the plugin as a module
+* port to libxfce4ui (bug #8095)
+* port to panel 4.9+ (bug #8393)
+* add about dialog
+* don't show percentage/time if charge is 0 (bug #8631)
+
+1.0.0 (2011/01/03):
+===================
+* Translated in 15 more languages, for a total of 38
+* Make the warning messages non modal, fixing bug #3008
+* Fix fan and temperature detection, fixing bug #2884
+* Showing "No battery, AC online" when no battery is inserted
+* Fix compilation on OpenBSD
+* Fix compilation on amd64 FreeBSD, fixing bug #3811
+* Fix compile issue on linux, fixing bug #3938
+* Various other small compile fixes and cleanup
