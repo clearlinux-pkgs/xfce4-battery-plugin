@@ -1,0 +1,7 @@
+1.2.0
+glib-dev
+pkgconfig(glib-2.0)
+pkgconfig(gtk+-3.0)
+pkgconfig(libxfce4panel-2.0)
+pkgconfig(libxfce4ui-2)
+pkgconfig(libxfce4util-1.0)
